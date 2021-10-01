@@ -1,6 +1,7 @@
 import React from 'react'
 import { Alerts } from './components/Alerts'
 import { ListItem } from './ListItem'
+import ConexionDB from './components/ConexionDB'
 
 export const Prueba = () => {
 
@@ -27,6 +28,12 @@ export const Prueba = () => {
             <hr></hr>
             <h3>Tercer titulo</h3>
             <Alerts msg="Mensaje" type={items.length>=2 ? "warning" : "danger"}/>
+
+            <hr />
+            <h4>Cuarto titulo</h4>
+            <ConexionDB />
+
+
         </div>
     )
 }
